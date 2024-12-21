@@ -1,0 +1,11 @@
+<h1>This is an Angular app.</h1>
+<p>{{count}}</p>
+<button (click)="onClicked()" class="active-class" [ngClass]="{'active-class': isActive, 'inactive-class': !isActive}">Click</button>
+<input [(ngModel)]="username" />
+<div *ngIf="showDiv">
+  <p>This is an example of *ngIf</p>
+</div>
+<ul *ngFor="let item of posts">
+  <li>{{item.title}}</li>
+</ul>
+<app-header [childData]="parentMessage"></app-header>
